@@ -1,0 +1,263 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    background-color: #2a2e32;
+    overflow-x: hidden;
+}
+
+
+.container {
+    max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+    padding: 0 15%; /* Add padding instead of margins */
+    box-sizing: border-box;
+}
+
+.box {
+    background: linear-gradient(352deg, #27292d -63.57%, #33373c 94.61%);
+    /* background: linear-gradient(352deg, rgba(39, 41, 45, 0.8) -63.57%, rgba(79, 85, 92, 0.8) 94.61%); */
+    width: auto;
+    border-radius: 15px;
+    
+
+}
+
+
+.glowing-div {
+    border: 1px solid transparent; /* Add a transparent border to create space for the glow */
+    box-shadow: 0 0 10px 7px rgba(0, 170, 255, 0.132); /* Blue glowing outline */
+    border: 1px solid rgba(119, 230, 255, 0.45);
+}
+.glowing-white {
+    box-shadow: 0 0 10px 7px rgba(255, 255, 255, 0.132); /* Blue glowing outline */
+    border: 1px solid rgba(255, 255, 255, 0.45);
+}
+.glowing-orange {
+    box-shadow: 0 0 10px 7px rgba(255, 145, 0, 0.132); /* Blue glowing outline */
+    border: 1px solid rgba(255, 196, 119, 0.45);
+}
+
+
+.bg-gradient-1 {
+    width: 1186px;
+    height: 1135px;
+    position: absolute;
+    left: -546px;
+    top: -210px;
+    border-radius: 1186px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 132, 0, 0.15) 0%, rgba(255, 183, 0, 0) 100%);
+    z-index: -1;
+}
+.bg-gradient-2 {
+    width: 1586px;
+    height: 1535px;
+    position: absolute;
+    right: -711px;
+    bottom: -820px;
+    border-radius: 1186px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(0, 132, 255, 0.13) 0%, rgba(0, 157, 255, 0) 100%);
+    z-index: -1;
+}
+.bg-gradient-3 {
+    width: 1586px;
+    height: 1535px;
+    position: absolute;
+    left: -1011px;
+    bottom: -1520px;
+    border-radius: 1186px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(255, 0, 204, 0.13) 0%, rgba(242, 0, 255, 0) 100%);
+    z-index: -1;
+}
+
+
+/* NAVBAR */
+
+.logo {
+    width: 50px;
+}
+
+.nav-item {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 992px) {
+    .nav-link {
+        position: relative;
+    }
+    
+    .nav-link::after {
+        content: "";
+        position: absolute;
+        bottom: -9px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        opacity: 0;
+    }
+    
+    .nav-link.active::after {
+        opacity: 1;
+    }
+}
+
+
+
+/* ABOUT ME */
+
+.pp {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.329);
+}
+
+.name {
+    color: white;
+    font-weight: 500;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.badge-yellow {
+    color: rgb(109, 56, 0);
+    background-color: rgb(255, 166, 0);
+    box-shadow: 0 0 10px rgba(251, 170, 39, 0.8); /* Adjust the shadow color and spread as needed */
+}
+.badge-blue {
+    color: rgb(0, 35, 193);
+    background-color: rgb(0, 157, 255);
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.9); /* Adjust the shadow color and spread as needed */
+}
+.badge-pink {
+    color: rgb(98, 0, 74);
+    background-color: rgb(231, 0, 169);
+    box-shadow: 0 0 10px rgba(255, 1, 153, 0.8); /* Adjust the shadow color and spread as needed */
+}
+.badge-green {
+    color: rgb(0, 98, 28);
+    background-color: rgb(0, 217, 69);
+    box-shadow: 0 0 10px rgba(1, 255, 81, 0.8); /* Adjust the shadow color and spread as needed */
+}
+.badge-red {
+    color: rgb(98, 0, 0);
+    background-color: rgb(255, 84, 84);
+    box-shadow: 0 0 10px rgba(255, 86, 86, 0.8); /* Adjust the shadow color and spread as needed */
+}
+.badge-white {
+    margin: 0 5px;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6); /* Adjust the shadow color and spread as needed */
+}
+
+
+
+
+/* PROJECTS */
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 13px;
+    background-color: blue;
+    
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: 2em;
+    color: white;
+
+}
+
+
+.button-resp {
+    border: none; /* Remove the button border */
+    background-color: transparent; /* Remove the button background fill */
+    cursor: pointer; /* Add cursor pointer for interactivity */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.button-resp:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+.box1 {
+    background: radial-gradient(100.19% 268.29% at 50.12% 268.29%, #FF7A00 0%, #3e4147 100%);
+}
+.icon1 {
+    background: radial-gradient(427.94% 83.51% at 100% 78.33%, #FF7A00 0%, #FFB876 100%);
+    box-shadow: 0 0 10px rgba(251, 170, 39, 0.8);
+}
+.box2 {
+    background: radial-gradient(100.19% 268.29% at 50.12% 268.29%, #00a6ff 0%, #3e4147 100%);
+}
+.icon2 {
+    background: radial-gradient(427.94% 83.51% at 100% 78.33%, #00aaff 0%, #12acff 100%);
+    box-shadow: 0 0 10px rgba(34, 163, 255, 0.8);
+}
+
+.project {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+
+
+/* BLOG */
+
+.accordion {
+    background-color: #222529; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.accordion-body {
+    background-color: #262a2e; /* Darker background color for content */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    /* border-color: rgba(0,0,0,.125); */
+}
+
+.accordion {
+    --bs-accordion-border-color: rgb(57, 60, 63);
+    --bs-accordion-border-radius: 0px;
+    --bs-accordion-inner-border-radius: 0px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+        padding: 0 5%; /* Add padding instead of margins */
+        box-sizing: border-box;
+    }
+
+}
+@media screen and (max-width: 576px) {
+    body {
+        text-align: center;
+    }
+    .about-col {
+        padding: 10%;
+    }
+    .col-auto {
+        display: block;
+        margin: 0px auto;
+        text-align: center;
+    }
+
+}
